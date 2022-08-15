@@ -10,6 +10,7 @@ import NProgress from '~/components/NProgress'
 import AppNav from '~/components/layout/AppNav'
 import GlobalStyle from '~/styles/global'
 import { dark } from '~/styles/themes'
+import '~/styles/globals.css'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const client = useApollo(pageProps)
