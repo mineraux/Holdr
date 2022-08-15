@@ -4,7 +4,10 @@
   "extensions": {
     "endpoints": {
       "API Endpoint": {
-        "url": "https://yourapi/graphql",
+        "url": "https://localhost:4000/api",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
         "introspect": true
       }
     }

@@ -9,17 +9,17 @@ import { useApollo } from '~/apollo/client'
 import NProgress from '~/components/NProgress'
 import AppNav from '~/components/layout/AppNav'
 import GlobalStyle from '~/styles/global'
-import { light } from '~/styles/themes'
+import { dark } from '~/styles/themes'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const client = useApollo(pageProps)
 
   return (
     <StrictMode>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={dark}>
         <ApolloProvider client={client}>
           <GlobalStyle />
-          <NProgress color={light.colors.primary} spinner={false} />
+          <NProgress color={dark.colors.primary} spinner={false} />
           <AppNav />
           <AnimatePresence exitBeforeEnter initial={false}>
             <Component {...pageProps} key={router.route} />

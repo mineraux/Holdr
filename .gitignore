@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+api/node_modules
 /.pnp
 .pnp.js
 
@@ -19,6 +20,7 @@
 *.pem
 .eslintcache
 tsconfig.tsbuildinfo
+api/yarn.lock
 
 # debug
 npm-debug.log*
@@ -28,6 +30,11 @@ yarn-error.log*
 # local env files
 .env.local
 .env.*.local
+api/nodemon.json
+
+# security
+api/server.cert
+api/server.key
 
 # vercel
 .vercel

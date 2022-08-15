@@ -1,6 +1,5 @@
 schema:
-  - './client.schema.graphql'
-  - './schema.graphql'
+  - "https://localhost:4000/api"
 documents:
   - "src/**/*.graphql"
   - "pages/**/*.tsx"
@@ -11,7 +10,6 @@ overwrite: true
 config: {}
 hooks:
   afterAllFileWrite:
-    - eslint --fix
     - prettier --write
 generates:
   ./src/__generated__/possibleTypes.json:
